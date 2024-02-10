@@ -1,0 +1,831 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+a{
+    white-space: nowrap;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    font-family: "poppins";
+    width: 100%;
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    padding:1px;
+    right: 0;
+    left: 0;
+    float: left;
+    background-color:white;
+    box-shadow:0 0 10px black;
+    height: 90px;
+    z-index: 1000;
+    
+    
+}
+ul{
+    float: left;
+    margin-left:150px;
+    display: flex;
+    padding:50px;
+    
+
+}
+
+li {
+    display: flex;
+    float: left;
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li a{
+    text-decoration: none;
+    transition: 0.5s linear;
+   
+}
+
+li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:#fac031;
+    display: block;
+    transition: 0.5s linear;
+}
+li a:hover::after{
+    width: 100%;
+    
+
+}
+
+li a:hover{
+    color: #fac031;
+}
+.logo img{
+    height: 70px;
+    width: 100px;
+    margin: 8px 0;
+    cursor: pointer;
+    margin-left: 170px;
+}
+
+.icon i{
+    
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 60px;
+    margin-left: 300px;
+    transition: 0.5s;
+}
+.icon i:hover{
+    color:#fac031;
+}
+
+#likes{
+    margin-left: 10px;
+}
+#shop{
+    margin-left: 10px;
+}
+.hero-txt{
+    position: relative;
+    top: 250px;
+    float: left;
+    margin-left: 150px;
+    font-size: 35px;
+    font-weight:1300px;
+    font-family: "poppins";
+
+}
+.hero-txt span{
+    color: #fac031;
+    font-family: mv boli;
+
+}
+.hero-img{
+    margin-left: 950px;
+    height: 50px;
+    width: 50px;
+}
+
+.hero-img img{
+    margin-top:200px;
+}
+.para1{
+    font-size: 15px;
+    font-family: "poppins";
+    
+}
+.btn {
+    font-size: 25px;
+    background-color: #fac031;
+    text-align: center;
+    width:200px;
+    border-radius: 15px;
+    border:3px solid black;
+    
+   
+}
+
+.btn a:hover{
+    cursor: pointer;
+    color:white;
+}
+
+.btn i{
+    color: black;
+}
+.btn i:hover{
+    cursor: pointer;
+    color: white;
+    transform:translateX(7px);
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    
+}
+.about{
+    width:100%;
+    height: 109vh;
+    font-family: "poppins";
+}
+.about-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-image img{
+    height: 600px;
+    width: 800px;
+    margin-left: 20px;
+    margin: 100px;
+}
+
+.about-txt h1{
+    font-size: 55px;
+    margin-top: -150px;
+}
+
+.about-txt h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.about-txt p{
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-top: 50px;
+    margin-right: 90px;
+    font-weight: 800px;
+    font-family:"Times New Roman";
+    
+}
+
+.about-txt h1 span{
+    color: #fac031;
+    font-family: "mv boli";
+}
+
+.about-btn{
+    font-size: 25px;
+    background-color: #fac031;
+    text-align: center;
+    width:200px;
+    border-radius: 15px;
+    border:3px solid black;
+}
+
+
+
+.para1{
+    font-size: 15px;
+    font-family: "poppins";
+    
+}
+.about-btn {
+    font-size: 25px;
+    background-color: #fac031;
+    text-align: center;
+    width:200px;
+    border-radius: 15px;
+    border:3px solid black;
+    float: left;
+    margin-left: 1000px;
+    margin-top: -220px;
+    
+   
+}
+
+.about-btn a:hover{
+    cursor: pointer;
+    color:white;
+}
+
+.about-btn i{
+    color: black;
+}
+.about-btn i:hover{
+    cursor: pointer;
+    color: white;
+    
+}
+.about-btn a{
+    text-decoration: none;
+    color: black;
+    
+}
+.menu{
+    width: 100%;
+    height: 109vh;
+    font-family: "poppins";
+}
+.menu h1{
+    font-size: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    
+    
+    
+}
+.menu h1 span{
+    color: #fac031;
+    font-family: mv boli;
+    
+}
+.menu h1 span::after{
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: #fac031;
+    display: block;
+    margin-top: -20px;
+}
+.menu-box{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-left: 70px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:15px;
+    
+   
+}
+
+.menu-card{
+    width:325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.menu-image{
+    width: 300px;
+    height: 245px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+
+}
+.menu-image img{
+    height: 100%;
+    width : 100%;
+    
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    
+}
+.menu-image:hover img{
+    transform: scale(1.1);
+}
+
+.small-card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top:-400px;
+    opacity: 0;
+    right: -8px;
+}
+
+.menu-card:hover .small-card {
+    top:-220px;
+    right:20px;
+    opacity:1;
+    color:#fac031;
+    position: relative;
+   
+}
+.menu-card:hover{
+    cursor: pointer;
+}
+
+
+.small-card i{
+    font-size: 30px;
+    text-shadow: 0 0 6px black;
+    transition: 0.2s;
+}
+
+.small-card i:hover{
+    color:palegoldenrod;
+    cursor: pointer;
+}
+.menu-info h2{
+    color: #fac031;
+    font-size: 25px;
+    text-align: center;
+    width: 60%;
+    margin-left: 60px;
+}
+
+.menu-info p{
+    text-align:center;
+    padding: 20px;
+    margin-top: -7px;
+    
+}
+.menu-info h3{
+    text-align: center;
+    margin-top: -3px;
+    font-size: 22px;
+   
+}
+.menu-icon{
+    text-align: center;
+    color:#fac031;
+}
+.menu-btn{
+    font-size: 20px;
+    background-color:black;
+    text-align: center;
+    color: white;
+    width:200px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #fac031;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 0px;
+    
+}
+
+.menu-btn a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.gallery{
+    width: 100%;
+   
+}
+
+.gallery h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-top: 900px;
+    display: flex;
+}
+
+.gallery h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: "mv boli";
+    margin-top: -13px;
+    
+
+}
+
+.gallery h1 span::after{
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: #fac031;
+    display: block;
+    margin-top: -20px;
+}
+.gallery-image-box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+    margin-top: 30px;
+    
+}
+.gallery-image{
+   
+    align-items: center;
+    justify-content: center;
+    background: black;
+    
+}
+.gallery-image img{
+    width: 100%;
+    transition: .3s;
+}
+.gallery-image-box :hover img{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.gallery-image h3 {
+    position: relative;
+    float: left;
+    top:-280px;
+    right: -230px;
+    opacity: 0;
+    color: #fac031;
+    font-family: "mv boli";
+    font-size: 35px;
+    transition: 0.3s;
+}
+.gallery-image:hover h3{
+    opacity: 1;
+}
+.gallery-image p{
+    color: aliceblue;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -220px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.gallery-image:hover p{
+    opacity: 1;
+}
+.gallery-image .gallery-btn{
+    position:absolute;
+    margin-top: 80px;
+    color: #000;
+    background-color: #fac031;
+    opacity: 0;
+    font-size: 25px;
+    margin-left:200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+.gallery-image:hover .gallery-btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.review{
+    width:100%;
+    height: 109vh;
+   
+}
+
+
+.review h1{
+    font-size:55px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-family: "poppins";
+    
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: "mv boli";
+   
+}
+
+.review h1 span::after{
+    content:'';
+    display: block;
+    height:6px;
+    width: 100%;
+    background:#fac031;
+    margin-top: -6px;
+    
+}
+
+.review-box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+
+.review-card{
+    width:350px;
+    height: 480px;
+    box-shadow: 0 2px 8px black;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+.review-image{
+    display: flex;
+    transition: 0.3s;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.review-card:hover .review-image{
+    transform: translateY(-60px);
+}
+
+.review-image img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccc;
+}
+.review-txt{
+    text-align: center;
+}
+.review-txt .name{
+    transition: 0.3s;
+    color: #000;
+}
+
+.review-card:hover .review-txt .name{
+    transform: translateY(-50px);
+}
+.review-icon{
+    color: #fac031;
+    transition:0.3s;
+}
+.review-card:hover .review-icon{
+    transform: translateY(-30px);
+}
+.review-social i{
+    font-size: 20px;
+    opacity:0;
+    transition:0.3s;
+}
+.review-card:hover .review-social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.review-txt p{
+    text-align: center;
+    transition:0.3s;
+}
+.review-card:hover .review-txt p{
+    margin-top: 5px;
+}
+
+.order{
+    width:100%;
+    height:109vh;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.order h2{
+  font-size: 65px;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
+
+.order h2 span{
+    color: #fac031;
+    margin-right: 18px;
+    font-family: "mv boli";
+    margin-top: -20px;
+}
+.order h2 span::after{
+    content:'';
+    display: block;
+    height: 6px;
+    background: #fac031;
+    position: relative;
+    width: 100%;
+    margin-top:-13px;
+}
+.order-main{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order-image img{
+    width:600px;
+}
+
+.order-main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+
+.order-main form p{
+    line-height: 25px;
+}
+.order-main form .input{
+    margin: 5px;
+}
+.order-main form .input input{
+    width:300px;
+    height: 35px;
+    padding: 0 10px;
+    border:2px solid #ccc;
+    background: #eee;
+    outline:none;
+    border-radius: 3px;
+}
+.order-main form .input input:focus{
+    border: 2px solid #fac031;
+}
+.order-btn{
+    padding: 10px 0;
+    width: 50%;
+    color: #eee;
+    background: #fac031;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.team{
+    width:100%;
+    height:90vh;
+    background-image:url('image/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.team h3{
+    font-size:65px;
+    justify-content:center;
+    text-align: center;
+    font-family:"poppins";
+    display: flex;
+    margin-top: -150px;
+
+}
+.team h3 span{
+    color: #fac031;
+    font-family: "mv boli";
+}
+.team h3 span::after{
+    content:'';
+    width: 100%;
+    display: block;
+    height: 5px;
+    background: #fac031;
+    margin-top: -25px;
+}
+
+.team-box{
+    justify-content: center;
+    width:95px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+    
+   
+}
+
+.profile{
+    width:320px;
+    height:200px;
+    border-radius:50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px black;
+    transition: 0.4s;
+
+}
+.profile:hover{
+    border-radius:20px;
+    height: 320px;
+}
+.profile img{
+    width:250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px black;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+.profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.profile .info{
+    text-align: center;
+    transition: 0.4s;
+    top:25%;
+    position: absolute;
+}
+.profile:hover .info{
+    top: 60%;
+}
+
+.info .name{
+    color: #fac031;
+    margin-bottom: 15px;
+}
+.info .bio{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.team-icon{
+    transition:0.3s;
+    cursor: pointer;
+}
+.team-icon i{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.team-icon i:hover{
+    color:#fac031;
+}
+
+.footer{
+    width:100%;
+    background: #eeeeee;
+}
+.footer-main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+.footer-tag{
+    text-align:center;
+}
+.footer-tag h2{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #000;
+    margin-bottom:10px;
+}
+.footer-tag p{
+ margin: 10px 10px;
+ font-size: 20px;
+}
+.footer-tag i{
+    cursor:pointer;
+    margin:0 5px;
+}
+
+.footer-tag i:hover{
+    color: #fac031;
+}
+
+.footer .end{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer .end i{
+    margin-left: 5px;
+}
+.footer .end span{
+    color: #fac031;
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 25px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: #fac031;
+    border-radius: 15px;
+}
